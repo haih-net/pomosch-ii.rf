@@ -5,8 +5,9 @@ import { MainPage } from 'app/Custom/pages/MainPage'
 
 export const handle = {
   seo: {
-    title: '',
-    description: '',
+    title: 'Помощь ИИ — с чем вам нужна помощь?',
+    description:
+      'Опишите задачу своими словами. Поможем разобраться, подготовить результат и понять, что делать дальше. Можно и просто поговорить.',
     path: '/',
     image: undefined,
   },

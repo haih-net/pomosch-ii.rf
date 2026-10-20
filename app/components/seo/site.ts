@@ -1,8 +1,9 @@
 export const site = {
-  origin: 'http://localhost:3000',
-  name: '',
+  origin: new URL('https://помощь-ии.рф').origin,
+  name: 'Помощь ИИ',
   language: 'ru',
-  description: '',
+  description:
+    'Помощь с повседневными задачами: понятные ответы и следующий шаг.',
 }
 
 // Preserve the identity published at https://fi1osof.ru/about.

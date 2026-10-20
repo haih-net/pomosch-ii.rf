@@ -117,7 +117,8 @@ export const HtmlStyled = styled.html`
     text-decoration: underline;
   }
   :focus-visible {
-    outline: none;
+    outline: 2px solid #2455ff;
+    outline-offset: 4px;
   }
   @media (prefers-reduced-motion: reduce) {
     *,

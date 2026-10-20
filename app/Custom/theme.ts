@@ -8,9 +8,9 @@ const breakpoints = {
 
 const colors = {
   // Primary colors
-  primary: '#173f2e',
+  primary: '#2455ff',
   secondary: '#68716a',
-  foreground: '#20372c',
+  foreground: '#151b2b',
   background: '#ffffff',
   muted: '#9ca3af',
 
@@ -26,7 +26,7 @@ const colors = {
 
   // Text
   text: {
-    primary: '#20372c',
+    primary: '#151b2b',
     secondary: '#68716a',
     disabled: '#9ca3af',
     light: '#ffffff',
@@ -58,14 +58,14 @@ const colors = {
 } as const
 
 const backgrounds = {
-  page: '#faf9f5',
+  page: '#ffffff',
   paper: '#ffffff',
   elevated: '#ffffff',
   overlay: 'rgba(0, 0, 0, 0.5)',
 } as const
 
 export const theme = {
-  font: "'Nunito', Arial, sans-serif",
+  font: "'Golos Text', Arial, sans-serif",
   colors,
   backgrounds,
   breakpoints,

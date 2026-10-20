@@ -5,11 +5,16 @@ import { ChatProvider } from '../components/Chat/ChatWidget/context'
 import { ChatWidget } from '../components/Chat/ChatWidget'
 import { FeedbackForm } from '../components/Feedback'
 import { Header } from './Header'
+import { HelpHeader, HelpFooter } from '../components/HelpBrand'
 import { Footer } from './Footer'
 import { CustomLayoutMainStyled, CustomLayoutStyled } from './styles'
 
 export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   const location = useLocation()
+  const isHelpPage =
+    location.pathname === '/' ||
+    location.pathname === '/answers' ||
+    location.pathname.startsWith('/answers/')
   const action = useNavigationType()
   const previousPath = useRef(location.pathname)
 
@@ -28,11 +33,11 @@ export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         <a className="skip-link" href="#main-content">
           К содержимому
         </a>
-        <Header key={location.key} />
+        {isHelpPage ? <HelpHeader /> : <Header key={location.key} />}
         <CustomLayoutMainStyled id="main-content" tabIndex={-1}>
           {children}
         </CustomLayoutMainStyled>
-        <Footer />
+        {isHelpPage ? <HelpFooter /> : <Footer />}
         <FeedbackForm />
         {location.pathname !== '/ai' && <ChatWidget />}
       </CustomLayoutStyled>
