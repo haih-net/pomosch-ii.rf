@@ -28,9 +28,9 @@ export const HelpBrand: React.FC = () => (
 export const HelpHeader: React.FC = () => (
   <HelpNavigationStyled as="header">
     <HelpBrand />
-    <nav aria-label="Основная навигация">
+    {/* <nav aria-label="Основная навигация">
       <Link to="/answers">Полезные ответы</Link>
-    </nav>
+    </nav> */}
   </HelpNavigationStyled>
 )
 

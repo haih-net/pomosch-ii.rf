@@ -56,9 +56,9 @@ export const MainPageView: React.FC = () => {
         <div className="answer-grid">
           <article className="featured-answer">
             <div className="featured-copy">
-              <Link className="topic" to="/answers/wifi">
+              {/* <Link className="topic" to="/answers/wifi">
                 Разобраться с подключением
-              </Link>
+              </Link> */}
               <h3>
                 <Link to="/answers/wifi">
                   Ноутбук не видит Wi-Fi. Что проверить?
@@ -118,9 +118,9 @@ export const MainPageView: React.FC = () => {
             </article>
           </div>
         </div>
-        <Link className="all-answers" to="/answers">
+        {/* <Link className="all-answers" to="/answers">
           Все полезные ответы <ArrowRight size={20} aria-hidden="true" />
-        </Link>
+        </Link> */}
       </section>
     </MainPageViewStyled>
   )

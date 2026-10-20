@@ -5,7 +5,7 @@ import { ChatProvider } from '../components/Chat/ChatWidget/context'
 import { ChatWidget } from '../components/Chat/ChatWidget'
 import { FeedbackForm } from '../components/Feedback'
 import { Header } from './Header'
-import { HelpHeader, HelpFooter } from '../components/HelpBrand'
+import { HelpHeader } from '../components/HelpBrand'
 import { Footer } from './Footer'
 import { CustomLayoutMainStyled, CustomLayoutStyled } from './styles'
 
@@ -37,7 +37,8 @@ export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         <CustomLayoutMainStyled id="main-content" tabIndex={-1}>
           {children}
         </CustomLayoutMainStyled>
-        {isHelpPage ? <HelpFooter /> : <Footer />}
+        {/* {isHelpPage ? <HelpFooter /> : <Footer />} */}
+        <Footer />
         <FeedbackForm />
         {location.pathname !== '/ai' && <ChatWidget />}
       </CustomLayoutStyled>

@@ -1,6 +1,6 @@
 import type { Express, Request, Response } from 'express'
 import { db } from '../database'
-import { helpAnswers } from '../../app/Custom/pages/Answers/data'
+// import { helpAnswers } from '../../app/Custom/pages/Answers/data'
 
 interface SitemapItem {
   uri: string
@@ -54,8 +54,8 @@ async function generateSitemap(req: Request, res: Response): Promise<void> {
   const xml = generateUrls(
     [
       { uri: '/' },
-      { uri: '/answers' },
-      ...helpAnswers.map((answer) => ({ uri: `/answers/${answer.slug}` })),
+      // { uri: '/answers' },
+      // ...helpAnswers.map((answer) => ({ uri: `/answers/${answer.slug}` })),
       ...concepts,
     ],
     origin,
